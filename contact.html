@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aetheria Pharmacy - Contact & Inquiries. Accessible glass-framed inquiry portal with strict client-side validation, 10-digit phone enforcement, confirmation modals, and emergency pharmacy helpline details.">
+  <title>Contact & Inquiries | Aetheria Pharmacy</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#mainContent" class="skip-link">Skip to main content</a>
+
+  <!-- Sticky Frosted-Mirror Header -->
+  <header class="header-mirror" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-link" aria-label="Aetheria Pharmacy Home">
+        <div class="brand-emblem" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+            <circle cx="12" cy="12" r="9" stroke-width="1.5"></circle>
+          </svg>
+        </div>
+        <div class="brand-meta">
+          <span class="brand-title">Aetheria</span>
+          <span class="brand-subtitle">Pharmacy Information</span>
+        </div>
+      </a>
+
+      <!-- Desktop & Mobile Navigation -->
+      <nav aria-label="Primary navigation">
+        <button class="menu-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primaryNavMenu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+
+        <ul class="nav-menu" id="primaryNavMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="medicines.html" class="nav-link">Medicines</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main id="mainContent" class="main-content">
+    
+    <!-- Top Medical Disclaimer Banner -->
+    <div class="container" style="padding-top: 1.5rem;">
+      <aside class="disclaimer-banner" role="note" aria-label="Educational Medical Disclaimer">
+        <svg class="disclaimer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+        </svg>
+        <p class="disclaimer-text">
+          <strong>Emergency Advisory:</strong> The inquiry form below is dedicated to general educational queries, student research, and pharmacy service questions. It is <em>not monitored for clinical emergencies</em>. If you or someone you know is experiencing acute severe symptoms, chest pain, or poisoning, call national emergency numbers immediately.
+        </p>
+      </aside>
+    </div>
+
+    <!-- Section Intro Header -->
+    <section class="section" style="padding-top: 1.5rem; padding-bottom: 2rem;">
+      <div class="container">
+        <div style="max-width: 780px;">
+          <span class="badge-mint">Direct Public Desk</span>
+          <h1 style="margin-bottom: 0.75rem;">Contact & Educational Inquiries</h1>
+          <p style="font-size: 1.15rem; color: var(--text-secondary-sage);">
+            Have a question regarding active pharmaceutical ingredients, educational workshops, or visiting our dispensary? Submit your inquiry through our validated obsidian glass portal.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form & Sidebar Layout -->
+    <section class="section" style="padding-top: 0;" aria-label="Contact information and form">
+      <div class="container">
+        
+        <!-- Submission Success Alert Banner -->
+        <div id="contactSuccessBanner" class="submit-success-banner specular-card" role="alert">
+          <div style="display: flex; align-items: flex-start; gap: 1rem;">
+            <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(110,231,183,0.2); border: 1px solid var(--accent-mint-chrome); display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--accent-mint-chrome);">
+              <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            </div>
+            <div>
+              <h3 style="font-size: 1.6rem; margin-bottom: 0.35rem; color: var(--text-primary-ice);">Inquiry Confirmed & Logged</h3>
+              <p style="color: var(--text-secondary-sage); font-size: 0.95rem; margin-bottom: 0.5rem;">
+                Thank you. Your educational inquiry has been safely received. A pharmacist or health educator will review your note and respond within 24 hours.
+              </p>
+              <div style="font-size: 0.85rem; color: var(--accent-mint-chrome); font-weight: 600;">
+                Reference Ticket ID: <span id="submissionRefId" style="font-family: monospace; letter-spacing: 0.08em; background: rgba(0,0,0,0.4); padding: 0.2rem 0.6rem; border-radius: 6px;">APH-892104</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-layout-grid">
+          
+          <!-- Glass-Framed Accessible Inquiry Form -->
+          <div class="form-mirror-panel specular-card mirror-reflect">
+            <div class="form-header">
+              <h2>Send An Inquiry</h2>
+              <p>Please complete all fields with accurate contact details. All submissions are verified client-side before dispatch.</p>
+            </div>
+
+            <form id="pharmacyContactForm" class="contact-form" novalidate>
+              
+              <!-- Full Name Field -->
+              <div class="form-group">
+                <label for="fullName" class="form-label">
+                  <span>Full Name</span>
+                  <span class="req">* Required</span>
+                </label>
+                <input 
+                  type="text" 
+                  id="fullName" 
+                  name="fullName" 
+                  class="form-input" 
+                  placeholder="e.g., Dr. Ananya Sharma or Rahul Patel" 
+                  required
+                  aria-describedby="nameError"
+                  autocomplete="name"
+                >
+                <div id="nameError" class="form-error-msg" role="alert"></div>
+              </div>
+
+              <!-- Email Address Field -->
+              <div class="form-group">
+                <label for="emailAddress" class="form-label">
+                  <span>Email Address</span>
+                  <span class="req">* Required</span>
+                </label>
+                <input 
+                  type="email" 
+                  id="emailAddress" 
+                  name="emailAddress" 
+                  class="form-input" 
+                  placeholder="e.g., name@domain.edu or student@health.org" 
+                  required
+                  aria-describedby="emailError"
+                  autocomplete="email"
+                >
+                <div id="emailError" class="form-error-msg" role="alert"></div>
+              </div>
+
+              <!-- 10-Digit Phone Number Field -->
+              <div class="form-group">
+                <label for="phoneNumber" class="form-label">
+                  <span>10-Digit Phone Number</span>
+                  <span class="req">* Strictly 10 numeric digits</span>
+                </label>
+                <input 
+                  type="tel" 
+                  id="phoneNumber" 
+                  name="phoneNumber" 
+                  class="form-input" 
+                  placeholder="e.g., 9876543210 (digits only)" 
+                  maxlength="10"
+                  pattern="[0-9]{10}"
+                  inputmode="numeric"
+                  required
+                  aria-describedby="phoneHint phoneError"
+                  autocomplete="tel"
+                >
+                <span id="phoneHint" class="form-hint">Enter exactly 10 digits without spaces, country codes (+91), or letters.</span>
+                <div id="phoneError" class="form-error-msg" role="alert"></div>
+              </div>
+
+              <!-- Inquiry Type Dropdown -->
+              <div class="form-group">
+                <label for="inquiryType" class="form-label">
+                  <span>Inquiry Type</span>
+                  <span class="req">* Required</span>
+                </label>
+                <select id="inquiryType" name="inquiryType" class="form-select" required aria-describedby="inquiryError">
+                  <option value="" disabled selected>-- Select Inquiry Classification --</option>
+                  <option value="General Information">General Pharmacy Information</option>
+                  <option value="Medicine Guidance">Non-Prescription Medicine Guidance</option>
+                  <option value="Service Availability">Dispensary Service Availability</option>
+                  <option value="Wellness Check">Basic Wellness & Vitals Check</option>
+                  <option value="Student Project">Student Project / Educational Academic Query</option>
+                </select>
+                <div id="inquiryError" class="form-error-msg" role="alert"></div>
+              </div>
+
+              <!-- Message Field (minimum 10 characters) -->
+              <div class="form-group">
+                <label for="messageText" class="form-label">
+                  <span>Message</span>
+                  <span class="req">* Minimum 10 characters</span>
+                </label>
+                <textarea 
+                  id="messageText" 
+                  name="messageText" 
+                  class="form-textarea" 
+                  placeholder="Describe your inquiry, medicine question, or academic clarification in detail..." 
+                  rows="4"
+                  minlength="10"
+                  required
+                  aria-describedby="messageHint messageError"
+                ></textarea>
+                <span id="messageHint" class="form-hint">Briefly articulate your query. Please do not submit confidential private medical histories.</span>
+                <div id="messageError" class="form-error-msg" role="alert"></div>
+              </div>
+
+              <!-- Submit Button -->
+              <div style="margin-top: 0.5rem;">
+                <button type="submit" class="btn btn-primary" style="width: 100%; padding-block: 1rem;">
+                  <span>Review & Submit Inquiry</span>
+                  <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </button>
+              </div>
+
+            </form>
+          </div>
+
+          <!-- Contact Sidebar Information Panels -->
+          <div class="contact-info-stack">
+            
+            <!-- Direct Helplines -->
+            <article class="info-card specular-card mirror-reflect">
+              <h3>
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                Telephone & Direct Desk
+              </h3>
+              <ul class="info-list">
+                <li class="info-list-item">
+                  <span class="info-label">General Pharmacy Inquiry:</span>
+                  <span class="info-val">+91 98765 43210</span>
+                </li>
+                <li class="info-list-item">
+                  <span class="info-label">Clinical Education Desk:</span>
+                  <span class="info-val">+91 98765 43211</span>
+                </li>
+                <li class="info-list-item">
+                  <span class="info-label">Direct Email:</span>
+                  <span class="info-val">education@aetheriapharmacy.org</span>
+                </li>
+              </ul>
+            </article>
+
+            <!-- Emergency Helplines Notice -->
+            <article class="info-card specular-card mirror-reflect">
+              <h3 style="color: #fca5a5;">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                Emergency Helplines
+              </h3>
+              <p style="font-size: 0.92rem; margin-bottom: 1rem; color: var(--text-secondary-sage);">
+                For acute emergencies, toxic ingestions, or poisoning incidents, contact verified emergency hotlines immediately:
+              </p>
+              <ul class="info-list">
+                <li class="info-list-item">
+                  <span class="info-label">National Emergency Ambulance:</span>
+                  <span class="info-val" style="color: #fca5a5; font-weight: 700;">108 / 112</span>
+                </li>
+                <li class="info-list-item">
+                  <span class="info-label">National Poison Information Center (NPIC):</span>
+                  <span class="info-val" style="color: #fca5a5; font-weight: 700;">1800 116 117</span>
+                </li>
+              </ul>
+            </article>
+
+            <!-- Pharmacy Location -->
+            <article class="info-card specular-card mirror-reflect">
+              <h3>
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                Physical Facility
+              </h3>
+              <p style="font-size: 0.95rem; color: var(--text-primary-ice); margin-bottom: 0.5rem;">
+                Aetheria Community Health Wing, Block C, Ground Floor<br>
+                Medical Sciences Quadrangle, New Delhi 110001
+              </p>
+              <div style="font-size: 0.85rem; color: var(--accent-mint-chrome);">
+                Open Monday &ndash; Saturday from 8:00 AM to 9:30 PM.
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Client-Side Confirmation Modal Dialog (Prompts user before submission) -->
+  <div id="contactConfirmationModal" class="modal-confirm-overlay" role="dialog" aria-modal="true" aria-labelledby="confirmModalTitle">
+    <div class="modal-confirm-box">
+      <h3 id="confirmModalTitle">Confirm Submission</h3>
+      <p style="color: var(--text-secondary-sage); font-size: 0.95rem;">
+        Please review your inquiry details below before confirming dispatch to our pharmacy education team:
+      </p>
+
+      <div class="modal-review-list">
+        <div class="modal-review-row">
+          <span class="modal-review-label">Full Name:</span>
+          <span id="modalReviewName" class="modal-review-value"></span>
+        </div>
+        <div class="modal-review-row">
+          <span class="modal-review-label">Email:</span>
+          <span id="modalReviewEmail" class="modal-review-value"></span>
+        </div>
+        <div class="modal-review-row">
+          <span class="modal-review-label">Phone Number:</span>
+          <span id="modalReviewPhone" class="modal-review-value"></span>
+        </div>
+        <div class="modal-review-row">
+          <span class="modal-review-label">Inquiry Classification:</span>
+          <span id="modalReviewInquiry" class="modal-review-value"></span>
+        </div>
+        <div class="modal-review-row" style="flex-direction: column; gap: 0.25rem;">
+          <span class="modal-review-label">Message Preview:</span>
+          <span id="modalReviewMessage" style="color: var(--text-primary-ice); font-size: 0.9rem; font-style: italic; max-width: 100%; white-space: normal; line-height: 1.4;"></span>
+        </div>
+      </div>
+
+      <p style="font-size: 0.82rem; color: var(--text-muted-dark); margin-bottom: 1rem;">
+        By confirming, you acknowledge that this submission is for educational inquiry purposes and not for medical emergency response.
+      </p>
+
+      <div class="modal-actions">
+        <button type="button" id="btnCancelSubmission" class="btn btn-glass" style="padding: 0.65rem 1.25rem;">Edit Details</button>
+        <button type="button" id="btnConfirmSubmission" class="btn btn-primary" style="padding: 0.65rem 1.4rem;">Confirm & Send</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Persistent Mirror-Obsidian Footer -->
+  <footer class="footer-mirror" role="contentinfo">
+    <div class="container">
+      
+      <!-- Persistent Medical Disclaimer Box in Footer -->
+      <div class="footer-disclaimer-box" role="note" aria-label="Footer Medical Disclaimer">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+        <p class="footer-disclaimer-text">
+          <strong>Mandatory Medical Disclaimer:</strong> All information provided on Aetheria Pharmacy is strictly educational in nature. It is not intended to be a substitute for professional medical advice, diagnosis, or treatment. Always seek the direct guidance of your physician, licensed pharmacist, or other qualified healthcare provider regarding any medical condition or prescription regimen.
+        </p>
+      </div>
+
+      <div class="footer-grid">
+        
+        <div class="footer-brand">
+          <h4>Aetheria Pharmacy</h4>
+          <p>Bespoke botanical-glass educational web application promoting equitable healthcare understanding, medication safety, and UN SDG 3 health well-being across our community.</p>
+          <div class="badge-sdg" style="margin-bottom: 0;">
+            <span>UN SDG 3: Good Health & Well-being</span>
+          </div>
+        </div>
+
+        <div class="footer-nav-col">
+          <h5>Educational Pages</h5>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home Sanctuary</a></li>
+            <li><a href="medicines.html" class="footer-link">Medicine Information</a></li>
+            <li><a href="services.html" class="footer-link">Pharmacy Services</a></li>
+            <li><a href="gallery.html" class="footer-link">Botanical Gallery</a></li>
+            <li><a href="contact.html" class="footer-link">Contact & Inquiries</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h5>Pharmacy Desk</h5>
+          <ul class="footer-links">
+            <li style="color: var(--text-secondary-sage);">Dispensary Hours:</li>
+            <li style="color: var(--accent-mint-chrome); font-weight: 600;">Mon - Sat: 8:00 AM - 9:30 PM</li>
+            <li style="color: var(--accent-mint-chrome); font-weight: 600;">Sunday: 9:00 AM - 6:00 PM</li>
+            <li style="color: var(--text-secondary-sage); margin-top: 0.5rem;">Helpline: +91 98765 43210</li>
+            <li style="color: var(--text-secondary-sage);">No Ads &bull; No Tracking &bull; Pure HTML5</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Aetheria Pharmacy. Educational public-access platform. Built with Vanilla Web Standards.</p>
+        <p>Crafted in Mirror-Finish Obsidian & Botanical Glass UI</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

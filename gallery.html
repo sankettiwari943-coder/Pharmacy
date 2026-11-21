@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aetheria Pharmacy - Botanical Gallery. Explore our reflective obsidian-glass showcases of pharmacy environments, organized medicine shelves, cold-chain storage, and health awareness spaces.">
+  <title>Botanical Gallery | Aetheria Pharmacy</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#mainContent" class="skip-link">Skip to main content</a>
+
+  <!-- Sticky Frosted-Mirror Header -->
+  <header class="header-mirror" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-link" aria-label="Aetheria Pharmacy Home">
+        <div class="brand-emblem" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+            <circle cx="12" cy="12" r="9" stroke-width="1.5"></circle>
+          </svg>
+        </div>
+        <div class="brand-meta">
+          <span class="brand-title">Aetheria</span>
+          <span class="brand-subtitle">Pharmacy Information</span>
+        </div>
+      </a>
+
+      <!-- Desktop & Mobile Navigation -->
+      <nav aria-label="Primary navigation">
+        <button class="menu-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primaryNavMenu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+
+        <ul class="nav-menu" id="primaryNavMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="medicines.html" class="nav-link">Medicines</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main id="mainContent" class="main-content">
+    
+    <!-- Top Medical Disclaimer Banner -->
+    <div class="container" style="padding-top: 1.5rem;">
+      <aside class="disclaimer-banner" role="note" aria-label="Educational Medical Disclaimer">
+        <svg class="disclaimer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+        </svg>
+        <p class="disclaimer-text">
+          <strong>Visual Archive Notice:</strong> These curated architectural and botanical visuals highlight standard sanitary, cold-chain, and organizational benchmarks in modern pharmacy design. Displayed setups represent educational standards of good pharmacy practice (GPP) under UN SDG 3.
+        </p>
+      </aside>
+    </div>
+
+    <!-- Gallery Intro -->
+    <section class="section" style="padding-top: 1.5rem; padding-bottom: 2rem;">
+      <div class="container">
+        <div class="gallery-intro">
+          <span class="badge-mint">Visual Archive</span>
+          <h1>Pharmacy Environments & Storage</h1>
+          <p>
+            An interactive mirror-glass showcase featuring organized medicine shelves, cold-chain preservation units, confidential consultation pods, and apothecary botanical research benches. Click any card to expand.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Responsive Mirror-Gallery Grid (With -webkit-box-reflect) -->
+    <section class="section" style="padding-top: 0;" aria-label="Pharmacy image gallery">
+      <div class="container">
+        
+        <div class="gallery-grid">
+          
+          <!-- Gallery Item 1: Botanical Dispensary -->
+          <article class="gallery-frame-card specular-card mirror-reflect" tabindex="0" role="button" aria-haspopup="dialog" aria-label="View Botanical Dispensary Bench">
+            <div class="gallery-media-wrapper">
+              <span class="gallery-tag-pill">Dispensary</span>
+              <svg viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Contemporary Botanical Dispensary Bench Illustration">
+                <rect width="400" height="250" fill="#0A1813"/>
+                <defs>
+                  <linearGradient id="grad1" x1="0" y1="0" x2="400" y2="250" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#143428"/>
+                    <stop offset="1" stop-color="#081410"/>
+                  </linearGradient>
+                  <linearGradient id="mintGrad" x1="0" y1="0" x2="1" y2="1">
+                    <stop stop-color="#6EE7B7"/>
+                    <stop offset="1" stop-color="#10B981"/>
+                  </linearGradient>
+                </defs>
+                <rect width="400" height="250" fill="url(#grad1)"/>
+                <!-- Glass shelves background -->
+                <line x1="40" y1="90" x2="360" y2="90" stroke="rgba(212,235,224,0.25)" stroke-width="2"/>
+                <line x1="40" y1="150" x2="360" y2="150" stroke="rgba(212,235,224,0.25)" stroke-width="2"/>
+                <!-- Chemical glassware & botanical flasks -->
+                <path d="M120 150 L140 100 L150 100 L170 150 Z" fill="rgba(110,231,183,0.15)" stroke="#6EE7B7" stroke-width="1.5"/>
+                <path d="M140 100 L140 80 L150 80 L150 100" stroke="#6EE7B7" stroke-width="1.5"/>
+                <path d="M130 135 Q145 145 160 135" stroke="#6EE7B7" stroke-width="2"/>
+                <!-- Botanical Leaf Sprig in flask -->
+                <path d="M145 80 Q150 50 165 40 Q155 60 145 70" stroke="#6EE7B7" stroke-width="2" fill="none"/>
+                <circle cx="165" cy="40" r="4" fill="#6EE7B7"/>
+                <!-- Mortar and Pestle -->
+                <path d="M220 150 Q250 150 260 130 L210 130 Q220 150 250 150 Z" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+                <line x1="225" y1="115" x2="255" y2="140" stroke="#6EE7B7" stroke-width="3" stroke-linecap="round"/>
+                <!-- Shelf medicine bottles -->
+                <rect x="60" y="55" width="22" height="35" rx="3" fill="rgba(110,231,183,0.12)" stroke="rgba(212,235,224,0.3)"/>
+                <rect x="90" y="60" width="18" height="30" rx="3" fill="rgba(110,231,183,0.12)" stroke="rgba(212,235,224,0.3)"/>
+                <rect x="290" y="115" width="24" height="35" rx="4" fill="rgba(110,231,183,0.2)" stroke="#6EE7B7"/>
+                <rect x="325" y="110" width="20" height="40" rx="4" fill="rgba(255,255,255,0.05)" stroke="rgba(212,235,224,0.3)"/>
+                <!-- Ambient Glow Core -->
+                <circle cx="200" cy="120" r="60" fill="url(#mintGrad)" opacity="0.12"/>
+              </svg>
+              <div class="gallery-zoom-icon" aria-hidden="true">
+                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path></svg>
+              </div>
+            </div>
+            <div class="gallery-caption-box">
+              <h3 class="gallery-caption-title">Botanical Dispensary Bench</h3>
+              <p class="gallery-caption-desc">Custom compounding workspace integrating botanical extraction references with modern sterile compounding surfaces.</p>
+            </div>
+          </article>
+
+          <!-- Gallery Item 2: Precision Shelving -->
+          <article class="gallery-frame-card specular-card mirror-reflect" tabindex="0" role="button" aria-haspopup="dialog" aria-label="View Precision Medicine Shelves">
+            <div class="gallery-media-wrapper">
+              <span class="gallery-tag-pill">Organization</span>
+              <svg viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Organized Medicine Shelving System Illustration">
+                <rect width="400" height="250" fill="#0A1813"/>
+                <defs>
+                  <linearGradient id="grad2" x1="0" y1="0" x2="400" y2="250" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#0F281E"/>
+                    <stop offset="1" stop-color="#06120D"/>
+                  </linearGradient>
+                </defs>
+                <rect width="400" height="250" fill="url(#grad2)"/>
+                <!-- Shelf Vertical Pillars -->
+                <rect x="50" y="30" width="12" height="190" fill="rgba(255,255,255,0.08)" stroke="rgba(212,235,224,0.2)"/>
+                <rect x="338" y="30" width="12" height="190" fill="rgba(255,255,255,0.08)" stroke="rgba(212,235,224,0.2)"/>
+                <!-- Horizontal Glass Shelves -->
+                <rect x="50" y="75" width="300" height="8" rx="2" fill="rgba(110,231,183,0.18)" stroke="rgba(110,231,183,0.4)"/>
+                <rect x="50" y="145" width="300" height="8" rx="2" fill="rgba(110,231,183,0.18)" stroke="rgba(110,231,183,0.4)"/>
+                <!-- Unit-dose packages & color-coded boxes -->
+                <rect x="75" y="42" width="22" height="33" rx="3" fill="#10B981" opacity="0.4"/>
+                <rect x="105" y="45" width="25" height="30" rx="3" fill="#6EE7B7" opacity="0.3"/>
+                <rect x="138" y="40" width="30" height="35" rx="3" fill="rgba(255,255,255,0.1)"/>
+                <rect x="176" y="44" width="20" height="31" rx="3" fill="#10B981" opacity="0.5"/>
+                <!-- Middle Shelf -->
+                <rect x="75" y="110" width="40" height="35" rx="3" fill="rgba(229,184,105,0.2)" stroke="#E5B869" stroke-width="1"/>
+                <rect x="125" y="115" width="35" height="30" rx="3" fill="rgba(110,231,183,0.15)" stroke="#6EE7B7" stroke-width="1"/>
+                <rect x="170" y="105" width="45" height="40" rx="3" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.3)"/>
+                <rect x="225" y="112" width="38" height="33" rx="3" fill="rgba(110,231,183,0.25)"/>
+                <rect x="273" y="110" width="45" height="35" rx="3" fill="rgba(16,185,129,0.3)"/>
+                <!-- Bottom Area -->
+                <rect x="80" y="175" width="60" height="38" rx="4" fill="rgba(255,255,255,0.05)" stroke="rgba(212,235,224,0.2)"/>
+                <rect x="155" y="175" width="60" height="38" rx="4" fill="rgba(255,255,255,0.05)" stroke="rgba(212,235,224,0.2)"/>
+                <rect x="230" y="175" width="85" height="38" rx="4" fill="rgba(110,231,183,0.12)" stroke="#6EE7B7" stroke-width="1"/>
+              </svg>
+              <div class="gallery-zoom-icon" aria-hidden="true">
+                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path></svg>
+              </div>
+            </div>
+            <div class="gallery-caption-box">
+              <h3 class="gallery-caption-title">Organized Dispensary Shelves</h3>
+              <p class="gallery-caption-desc">FIFO (First-In, First-Out) color-coded pharmaceutical shelving preventing dispensation errors and expired stocks.</p>
+            </div>
+          </article>
+
+          <!-- Gallery Item 3: Cold Chain Storage -->
+          <article class="gallery-frame-card specular-card mirror-reflect" tabindex="0" role="button" aria-haspopup="dialog" aria-label="View Cold-Chain Storage Chamber">
+            <div class="gallery-media-wrapper">
+              <span class="gallery-tag-pill">Cold-Chain (2°C - 8°C)</span>
+              <svg viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Temperature Controlled Cold-Chain Refrigerator Illustration">
+                <rect width="400" height="250" fill="#071510"/>
+                <defs>
+                  <linearGradient id="coldGrad" x1="0" y1="0" x2="400" y2="250" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#0B2319"/>
+                    <stop offset="1" stop-color="#040D0A"/>
+                  </linearGradient>
+                </defs>
+                <rect width="400" height="250" fill="url(#coldGrad)"/>
+                <!-- Refrigerator Outline Frame -->
+                <rect x="100" y="25" width="200" height="200" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(110,231,183,0.4)" stroke-width="2"/>
+                <!-- Glass Door Inner Reflection -->
+                <rect x="112" y="37" width="176" height="176" rx="10" fill="rgba(110,231,183,0.06)" stroke="rgba(255,255,255,0.15)"/>
+                <!-- Temp Digital Display -->
+                <rect x="155" y="48" width="90" height="26" rx="6" fill="#040D0A" stroke="#6EE7B7" stroke-width="1.2"/>
+                <text x="200" y="66" fill="#6EE7B7" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="13" text-anchor="middle">3.8 °C &bull; OPTIMAL</text>
+                <!-- Vaccine Vials & Insulin Cartridges -->
+                <line x1="120" y1="120" x2="280" y2="120" stroke="rgba(255,255,255,0.2)" stroke-dasharray="4 4"/>
+                <line x1="120" y1="170" x2="280" y2="170" stroke="rgba(255,255,255,0.2)" stroke-dasharray="4 4"/>
+                <!-- Vials on shelf 1 -->
+                <rect x="135" y="90" width="14" height="30" rx="3" fill="#6EE7B7" opacity="0.6"/>
+                <rect x="155" y="90" width="14" height="30" rx="3" fill="#6EE7B7" opacity="0.6"/>
+                <rect x="175" y="90" width="14" height="30" rx="3" fill="#10B981" opacity="0.6"/>
+                <rect x="195" y="90" width="14" height="30" rx="3" fill="#10B981" opacity="0.6"/>
+                <rect x="225" y="85" width="18" height="35" rx="3" fill="rgba(255,255,255,0.15)" stroke="#6EE7B7"/>
+                <rect x="250" y="85" width="18" height="35" rx="3" fill="rgba(255,255,255,0.15)" stroke="#6EE7B7"/>
+                <!-- Vials on shelf 2 -->
+                <rect x="135" y="140" width="22" height="30" rx="3" fill="rgba(229,184,105,0.3)" stroke="#E5B869"/>
+                <rect x="165" y="140" width="22" height="30" rx="3" fill="rgba(229,184,105,0.3)" stroke="#E5B869"/>
+                <rect x="200" y="145" width="65" height="25" rx="4" fill="rgba(110,231,183,0.15)" stroke="#6EE7B7"/>
+              </svg>
+              <div class="gallery-zoom-icon" aria-hidden="true">
+                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path></svg>
+              </div>
+            </div>
+            <div class="gallery-caption-box">
+              <h3 class="gallery-caption-title">Cold-Chain Vaccine Chamber</h3>
+              <p class="gallery-caption-desc">Continuous 24/7 digital monitoring preserving biological potency of insulin, vaccines, and ophthalmic drops.</p>
+            </div>
+          </article>
+
+          <!-- Gallery Item 4: Consultation Pod -->
+          <article class="gallery-frame-card specular-card mirror-reflect" tabindex="0" role="button" aria-haspopup="dialog" aria-label="View Patient Consultation Pod">
+            <div class="gallery-media-wrapper">
+              <span class="gallery-tag-pill">Consultation</span>
+              <svg viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Private Consultation Desk Illustration">
+                <rect width="400" height="250" fill="#081510"/>
+                <defs>
+                  <linearGradient id="grad4" x1="0" y1="0" x2="400" y2="250" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#112A1F"/>
+                    <stop offset="1" stop-color="#050E0B"/>
+                  </linearGradient>
+                </defs>
+                <rect width="400" height="250" fill="url(#grad4)"/>
+                <!-- Curved glass acoustic partition -->
+                <path d="M60 40 Q180 30 340 60 L340 210 Q180 180 60 210 Z" fill="rgba(110,231,183,0.05)" stroke="rgba(212,235,224,0.25)"/>
+                <!-- Consultation Table Surface -->
+                <ellipse cx="200" cy="160" rx="110" ry="32" fill="rgba(15,34,27,0.8)" stroke="#6EE7B7" stroke-width="1.5"/>
+                <!-- Blood pressure monitor cuff on desk -->
+                <rect x="150" y="145" width="36" height="22" rx="4" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.4)"/>
+                <circle cx="168" cy="156" r="6" stroke="#6EE7B7" stroke-width="1.5"/>
+                <!-- Stethoscope graphic -->
+                <path d="M210 150 Q235 155 240 140 Q245 125 230 135" stroke="#6EE7B7" stroke-width="2" fill="none"/>
+                <!-- Educational Reference Tablet -->
+                <rect x="200" y="135" width="28" height="38" rx="3" fill="rgba(110,231,183,0.2)" stroke="#6EE7B7"/>
+              </svg>
+              <div class="gallery-zoom-icon" aria-hidden="true">
+                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path></svg>
+              </div>
+            </div>
+            <div class="gallery-caption-box">
+              <h3 class="gallery-caption-title">Confidential Consultation Pod</h3>
+              <p class="gallery-caption-desc">Private acoustic glass corner for discreet patient inquiries, dosage reviews, and vital measurements.</p>
+            </div>
+          </article>
+
+          <!-- Gallery Item 5: First-Aid Station -->
+          <article class="gallery-frame-card specular-card mirror-reflect" tabindex="0" role="button" aria-haspopup="dialog" aria-label="View Emergency First-Aid Response Station">
+            <div class="gallery-media-wrapper">
+              <span class="gallery-tag-pill">Emergency Response</span>
+              <svg viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rapid First-Aid Response Station Illustration">
+                <rect width="400" height="250" fill="#0A1813"/>
+                <defs>
+                  <linearGradient id="grad5" x1="0" y1="0" x2="400" y2="250" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#143428"/>
+                    <stop offset="1" stop-color="#081410"/>
+                  </linearGradient>
+                </defs>
+                <rect width="400" height="250" fill="url(#grad5)"/>
+                <!-- First Aid Kit Case -->
+                <rect x="110" y="55" width="180" height="140" rx="14" fill="rgba(255,255,255,0.06)" stroke="rgba(212,235,224,0.3)" stroke-width="2"/>
+                <!-- Case Handle -->
+                <path d="M165 55 L165 40 Q165 35 170 35 L230 35 Q235 35 235 40 L235 55" stroke="rgba(212,235,224,0.4)" stroke-width="2" fill="none"/>
+                <!-- Prominent Red/Green Medical Cross -->
+                <circle cx="200" cy="125" r="38" fill="rgba(110,231,183,0.12)" stroke="#6EE7B7" stroke-width="1.5"/>
+                <rect x="193" y="103" width="14" height="44" rx="2" fill="#6EE7B7"/>
+                <rect x="178" y="118" width="44" height="14" rx="2" fill="#6EE7B7"/>
+                <!-- Sterile bandage roll icon -->
+                <circle cx="255" cy="165" r="14" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.3)"/>
+              </svg>
+              <div class="gallery-zoom-icon" aria-hidden="true">
+                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path></svg>
+              </div>
+            </div>
+            <div class="gallery-caption-box">
+              <h3 class="gallery-caption-title">Rapid First-Aid Station</h3>
+              <p class="gallery-caption-desc">Fully equipped triage unit stocked with trauma dressings, antiseptic washes, burn hydrogels, and AED access.</p>
+            </div>
+          </article>
+
+          <!-- Gallery Item 6: Oral Rehydration Station -->
+          <article class="gallery-frame-card specular-card mirror-reflect" tabindex="0" role="button" aria-haspopup="dialog" aria-label="View Community Oral Rehydration & Hydration Station">
+            <div class="gallery-media-wrapper">
+              <span class="gallery-tag-pill">Community Wellness</span>
+              <svg viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Oral Rehydration & Electrolyte Corner Illustration">
+                <rect width="400" height="250" fill="#0A1813"/>
+                <defs>
+                  <linearGradient id="grad6" x1="0" y1="0" x2="400" y2="250" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#0C241B"/>
+                    <stop offset="1" stop-color="#05100C"/>
+                  </linearGradient>
+                </defs>
+                <rect width="400" height="250" fill="url(#grad6)"/>
+                <!-- Pure water carafe / dispenser -->
+                <path d="M170 190 L175 90 L225 90 L230 190 Z" fill="rgba(110,231,183,0.1)" stroke="#6EE7B7" stroke-width="1.8"/>
+                <path d="M185 90 L185 65 L215 65 L215 90" stroke="#6EE7B7" stroke-width="1.8"/>
+                <!-- Water level & droplet wave -->
+                <path d="M178 140 Q200 132 222 140 L228 185 L172 185 Z" fill="rgba(110,231,183,0.25)"/>
+                <circle cx="200" cy="112" r="5" fill="#6EE7B7"/>
+                <!-- Electrolyte sachets aligned beside -->
+                <rect x="250" y="130" width="28" height="42" rx="3" fill="rgba(229,184,105,0.2)" stroke="#E5B869" stroke-width="1.2"/>
+                <text x="264" y="155" fill="#E5B869" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="8" text-anchor="middle">ORS</text>
+                <rect x="285" y="134" width="28" height="42" rx="3" fill="rgba(110,231,183,0.2)" stroke="#6EE7B7" stroke-width="1.2"/>
+              </svg>
+              <div class="gallery-zoom-icon" aria-hidden="true">
+                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path></svg>
+              </div>
+            </div>
+            <div class="gallery-caption-box">
+              <h3 class="gallery-caption-title">Oral Rehydration Corner</h3>
+              <p class="gallery-caption-desc">Free clean water and WHO-formula electrolyte educational kits addressing heat exhaustion and dehydration.</p>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Interactive Lightbox Modal -->
+  <div id="galleryLightbox" class="lightbox-overlay" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle" aria-describedby="lightboxDesc">
+    <div class="lightbox-dialog">
+      <button type="button" class="lightbox-close" id="closeLightboxBtn" aria-label="Close image preview">
+        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+      </button>
+
+      <div class="lightbox-image-container" id="lightboxImageContainer">
+        <!-- Media cloned dynamically from active card -->
+      </div>
+
+      <div class="lightbox-caption">
+        <h3 id="lightboxTitle"></h3>
+        <p id="lightboxDesc"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Persistent Mirror-Obsidian Footer -->
+  <footer class="footer-mirror" role="contentinfo">
+    <div class="container">
+      
+      <!-- Persistent Medical Disclaimer Box in Footer -->
+      <div class="footer-disclaimer-box" role="note" aria-label="Footer Medical Disclaimer">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+        <p class="footer-disclaimer-text">
+          <strong>Mandatory Medical Disclaimer:</strong> All information provided on Aetheria Pharmacy is strictly educational in nature. It is not intended to be a substitute for professional medical advice, diagnosis, or treatment. Always seek the direct guidance of your physician, licensed pharmacist, or other qualified healthcare provider regarding any medical condition or prescription regimen.
+        </p>
+      </div>
+
+      <div class="footer-grid">
+        
+        <div class="footer-brand">
+          <h4>Aetheria Pharmacy</h4>
+          <p>Bespoke botanical-glass educational web application promoting equitable healthcare understanding, medication safety, and UN SDG 3 health well-being across our community.</p>
+          <div class="badge-sdg" style="margin-bottom: 0;">
+            <span>UN SDG 3: Good Health & Well-being</span>
+          </div>
+        </div>
+
+        <div class="footer-nav-col">
+          <h5>Educational Pages</h5>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home Sanctuary</a></li>
+            <li><a href="medicines.html" class="footer-link">Medicine Information</a></li>
+            <li><a href="services.html" class="footer-link">Pharmacy Services</a></li>
+            <li><a href="gallery.html" class="footer-link">Botanical Gallery</a></li>
+            <li><a href="contact.html" class="footer-link">Contact & Inquiries</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h5>Pharmacy Desk</h5>
+          <ul class="footer-links">
+            <li style="color: var(--text-secondary-sage);">Dispensary Hours:</li>
+            <li style="color: var(--accent-mint-chrome); font-weight: 600;">Mon - Sat: 8:00 AM - 9:30 PM</li>
+            <li style="color: var(--accent-mint-chrome); font-weight: 600;">Sunday: 9:00 AM - 6:00 PM</li>
+            <li style="color: var(--text-secondary-sage); margin-top: 0.5rem;">Helpline: +91 98765 43210</li>
+            <li style="color: var(--text-secondary-sage);">No Ads &bull; No Tracking &bull; Pure HTML5</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Aetheria Pharmacy. Educational public-access platform. Built with Vanilla Web Standards.</p>
+        <p>Crafted in Mirror-Finish Obsidian & Botanical Glass UI</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
